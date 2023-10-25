@@ -1,9 +1,16 @@
 body {
-  background-color: #ff7171;
+  background-color: #f4e9e9;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
 }
+.picture {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
 
+  width: 40%;
+}
 .container {
   margin: 60px auto;
   max-width: 600px;
@@ -16,6 +23,8 @@ body {
 h1 {
   text-align: center;
   font-weight: 200;
+  font-size: 50px;
+  margin-bottom: 0;
 }
 
 i {
