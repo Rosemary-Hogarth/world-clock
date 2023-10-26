@@ -7,7 +7,7 @@ function updateTime() {
 
     berlinDateElement.innerHTML = berlinTime.format("MMMM Do YYYY");
     berlinTimeElement.innerHTML = berlinTime.format(
-      "h:MM:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
   let sydneyElement = document.querySelector("#sydney");
@@ -18,7 +18,7 @@ function updateTime() {
 
     sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
     sydneyTimeElement.innerHTML = sydneyTime.format(
-      "h:MM:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -30,7 +30,7 @@ function updateTime() {
 
     tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
     tokyoTimeElement.innerHTML = tokyoTime.format(
-      "h:MM:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
@@ -39,6 +39,9 @@ function updateCity() {
   let cityTimeZone = document.querySelector("#city").value;
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
+  }
+  if (cityTimeZone === moment.tz.guess()) {
+    cityTimeZone = `${moment.tz.guess()} ☼`;
   }
 
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
@@ -81,7 +84,7 @@ function updateCity() {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "h:MM:ss"
+            "h:mm:ss"
           )} <small>${cityTime.format("A")}</small>
           </div>
            </div>
