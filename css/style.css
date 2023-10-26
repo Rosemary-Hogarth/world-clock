@@ -13,19 +13,19 @@ body {
 .berlin {
   width: 20px;
   position: relative;
-  top: 10px;
+  top: 8px;
 }
 
 .sydney {
   width: 60px;
   position: relative;
-  top: 11px;
+  top: 7px;
 }
 
 .tokyo {
   width: 45px;
   position: relative;
-  top: 16px;
+  top: 10px;
 }
 
 .london {
@@ -88,6 +88,11 @@ h2 {
   padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   vertical-align: middle;
+}
+
+.germany {
+  position: relative;
+  top: -11px;
 }
 
 .city:last-child {
