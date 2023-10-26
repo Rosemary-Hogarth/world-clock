@@ -11,19 +11,19 @@ body {
 }
 
 .berlin {
-  width: 40px;
+  width: 20px;
   position: relative;
-  top: 20px;
+  top: 10px;
 }
 
 .sydney {
-  width: 80px;
+  width: 60px;
   position: relative;
-  top: 18px;
+  top: 11px;
 }
 
 .tokyo {
-  width: 65px;
+  width: 45px;
   position: relative;
   top: 16px;
 }
@@ -52,7 +52,6 @@ body {
 }
 .container {
   margin: 60px auto;
-
   max-width: 600px;
   background: #fff;
   padding: 30px;
@@ -88,6 +87,7 @@ h2 {
   justify-content: space-between;
   padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
 }
 
 .city:last-child {
@@ -102,6 +102,7 @@ h2 {
 .time {
   font-size: 45px;
   font-weight: 400;
+  vertical-align: middle;
   justify-content: space-between;
 }
 
