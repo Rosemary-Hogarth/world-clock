@@ -20,17 +20,26 @@
   </head>
   <body>
     <div class="container">
-      <h1><i class="fa-solid fa-earth-europe"></i> World Clock</h1>
+      <h1><i class="fa-solid fa-clock"></i> World Clock</h1>
       <img class="picture" src="images/map.png" alt="map" width="300px" />
       <select id="city">
         <option value="">Select a city...</option>
         <option value="current">My current location</option>
         <option value="Europe/London">London</option>
-        <option value="Europe/Berlin">Berlin</option>
+
         <option value="America/New_York">New York</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
       </select>
 
       <div id="cities">
+        <div class="city" id="berlin">
+          <div>
+            <h2>Berlin 🇩🇪</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time">></div>
+        </div>
         <div class="city" id="sydney">
           <div>
             <h2>Sydney 🇦🇺</h2>
