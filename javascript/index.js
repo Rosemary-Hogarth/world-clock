@@ -7,7 +7,7 @@ function updateTime() {
 
     berlinDateElement.innerHTML = berlinTime.format("MMMM Do YYYY");
     berlinTimeElement.innerHTML = berlinTime.format(
-      "HH:mm:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
   let sydneyElement = document.querySelector("#sydney");
@@ -18,7 +18,7 @@ function updateTime() {
 
     sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
     sydneyTimeElement.innerHTML = sydneyTime.format(
-      "HH:mm:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -30,7 +30,7 @@ function updateTime() {
 
     tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
     tokyoTimeElement.innerHTML = tokyoTime.format(
-      "HH:mm:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
@@ -81,7 +81,7 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "HH:mm:ss"
+            "h:mm:ss"
           )} <small>${cityTime.format("A")}</small>
           </div>
            </div>

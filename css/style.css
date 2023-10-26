@@ -102,6 +102,7 @@ h2 {
 .time {
   font-size: 45px;
   font-weight: 400;
+  justify-content: space-between;
 }
 
 .time small {
