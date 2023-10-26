@@ -7,8 +7,48 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 10px;
-
   width: 40%;
+}
+
+.berlin {
+  width: 40px;
+  position: relative;
+  top: 20px;
+}
+
+.sydney {
+  width: 80px;
+  position: relative;
+  top: 18px;
+}
+
+.tokyo {
+  width: 65px;
+  position: relative;
+  top: 16px;
+}
+
+.london {
+  width: 55px;
+  position: relative;
+  top: 16px;
+}
+.newyork {
+  width: 65px;
+  position: relative;
+  top: 16px;
+}
+
+.seoul {
+  width: 65px;
+  position: relative;
+  top: 16px;
+}
+
+.johannesburg {
+  width: 100px;
+  position: relative;
+  top: 11px;
 }
 .container {
   margin: 60px auto;
@@ -67,7 +107,7 @@ h2 {
 .time small {
   font-size: 15px;
   vertical-align: middle;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {

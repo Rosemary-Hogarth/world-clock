@@ -35,12 +35,43 @@ function updateTime() {
   }
 }
 
-function updateCity(event) {
-  let cityTimeZone = event.target.value;
+function updateCity() {
+  let cityTimeZone = document.querySelector("#city").value;
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
+
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+
+  if (cityName === "London") {
+    cityName = `${cityName}  <img
+                class="london"
+                src="images/london.jpg"
+                alt="big ben"
+              />`;
+  }
+  if (cityName === "New York") {
+    cityName = `${cityName} <img
+                class="newyork"
+                src="images/newyork.jpg"
+                alt="liberty"
+              />`;
+  }
+  if (cityName === "Seoul") {
+    cityName = `${cityName} <img
+                class="seoul"
+                src="images/seoul.jpg"
+                alt="tower"
+              />`;
+  }
+  if (cityName === "Johannesburg") {
+    cityName = `${cityName} <img
+                class="johannesburg"
+                src="images/johannesburg.jpg"
+                alt="skyline"
+              />`;
+  }
+
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
@@ -60,6 +91,7 @@ function updateCity(event) {
 
 updateTime();
 setInterval(updateTime, 1000);
+setInterval(updateCity, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
